@@ -1,4 +1,4 @@
-package aragon.unam.tarea.tareaUno;
+package aragon.unam.tareas.tareaUno;
 
 import java.util.Scanner;
 

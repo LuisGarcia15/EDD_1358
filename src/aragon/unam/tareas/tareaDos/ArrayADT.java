@@ -1,4 +1,4 @@
-package aragon.unam.tarea.tareaDos;
+package aragon.unam.tareas.tareaDos;
 
 import java.util.ArrayList;
 
