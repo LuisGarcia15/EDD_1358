@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import aragon.unam.estructuras.ArrayADT;
 
-public class NominaADT {
+public class NominaADT{
 	
 	private ArrayADT<Empleado>datos;
 
@@ -66,6 +66,26 @@ public class NominaADT {
 		}
 	}
 	
+	public void mostrarEmpleadosMayorYMenor() {
+		Empleado empleadoMenor = datos.getItem(0);
+		Empleado empleadoMayor = null;
+		
+		for (int i = 0; i < datos.getLength(); i++) {
+			
+			if(empleadoMenor.compareTo(datos.getItem(i)) < 0) {
+				empleadoMayor = datos.getItem(i);
+			}else {
+					if(empleadoMenor.compareTo(datos.getItem(i)) > 0) {
+						empleadoMayor = empleadoMenor;
+						empleadoMenor = datos.getItem(i);
+					}
+			}
+		}
+		
+		System.out.println("El empleado más antiguo es: " + empleadoMenor + " que inicio en el año: " + empleadoMenor.getAnioIngreso());
+		System.out.println("El empleado más reciente es: " + empleadoMayor + " que inicio en el año: " + empleadoMayor.getAnioIngreso());
+	}
+	
 	public ArrayADT<Empleado> getDatos() {
 		return datos;
 	}
@@ -73,4 +93,5 @@ public class NominaADT {
 	public String pruebaToString() {
 		return this.datos.toString();
 	}
+
 }

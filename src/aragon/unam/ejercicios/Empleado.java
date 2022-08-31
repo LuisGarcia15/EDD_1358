@@ -1,6 +1,6 @@
 package aragon.unam.ejercicios;
 
-public class Empleado {
+public class Empleado implements Comparable<Empleado>{
 	private final int numTrabajador;
 	private String nombre;
 	private String apellidoPaterno;
@@ -17,6 +17,13 @@ public class Empleado {
 		this.apellidoMaterno = apellidoMaterno;
 		this.hrExtra = hrExtra;
 		this.sueldoBase = sueldoBase;
+		this.anioIngreso = anioIngreso;
+	}
+	
+	
+	public Empleado(int numTrabajador, int anioIngreso) {
+		super();
+		this.numTrabajador = numTrabajador;
 		this.anioIngreso = anioIngreso;
 	}
 
@@ -83,6 +90,11 @@ public class Empleado {
 		return "Empleado [numTrabajador=" + numTrabajador + ", nombre=" + nombre + ", apellidoPaterno="
 				+ apellidoPaterno + ", apellidoMaterno=" + apellidoMaterno + ", hrExtra=" + hrExtra + ", sueldoBase="
 				+ sueldoBase + ", anioIngreso=" + anioIngreso + "]";
+	}
+
+	@Override
+	public int compareTo(Empleado o) {
+		return this.anioIngreso - o.anioIngreso;
 	}
 	
 }
