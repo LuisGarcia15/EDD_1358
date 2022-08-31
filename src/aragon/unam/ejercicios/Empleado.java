@@ -19,13 +19,6 @@ public class Empleado implements Comparable<Empleado>{
 		this.sueldoBase = sueldoBase;
 		this.anioIngreso = anioIngreso;
 	}
-	
-	
-	public Empleado(int numTrabajador, int anioIngreso) {
-		super();
-		this.numTrabajador = numTrabajador;
-		this.anioIngreso = anioIngreso;
-	}
 
 	public int getNumTrabajador() {
 		return numTrabajador;
