@@ -12,6 +12,7 @@ public class ClaseDePruebas {
 
 		System.out.println(n.pruebaToString());
 		System.out.println("**************************** \n");
+		
 		n.mostrarEmpleadosMayorYMenor();
 		
 	}
