@@ -1,4 +1,4 @@
-package aragon.unam.ejercicios;
+package aragon.unam.tareas.tareaTres;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 
-import aragon.unam.estructuras.ArrayADT;
+import aragon.unam.tareas.tareaDos.ArrayADT;
 
 public class NominaADT{
 	

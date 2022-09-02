@@ -42,7 +42,7 @@ public class ArrayADT<T> {
 
 	@Override
 	public String toString() {
-		String estado = "------------- "+this.tamanio+" -------------\n";
+		String estado = "------------- "+ this.tamanio +" -------------\n";
         for (T dato : datos) {
             if(dato != null){
                 estado += dato.toString()+"\n";

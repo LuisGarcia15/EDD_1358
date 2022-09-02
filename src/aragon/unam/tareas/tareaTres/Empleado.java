@@ -1,4 +1,4 @@
-package aragon.unam.ejercicios;
+package aragon.unam.tareas.tareaTres;
 
 public class Empleado implements Comparable<Empleado>{
 	private final int numTrabajador;
